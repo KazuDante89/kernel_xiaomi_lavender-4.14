@@ -41,6 +41,9 @@
 *.xz
 Module.symvers
 modules.builtin
+AnyKernel3
+out
+*tar*
 
 #
 # Top-level generic files
