@@ -9319,6 +9319,7 @@ static void detach_task(struct task_struct *p, struct lb_env *env)
 	double_unlock_balance(env->src_rq, env->dst_rq);
 	lockdep_on();
 #else
+	lockdep_on();
 	set_task_cpu(p, env->dst_cpu);
 #endif
 }
