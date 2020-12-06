@@ -4,5 +4,7 @@ export ARCH=arm64
 make lavender_defconfig
 cp .config arch/arm64/configs/lavender_defconfig
 
-git add arch
-git commit -asm "ARM64/configs: lavender: Regenerate defconfig" -s
+if [[ -z $1 ]]; then
+	git add arch
+	git commit -asm "ARM64/configs: lavender: Regenerate defconfig" -s
+fi
