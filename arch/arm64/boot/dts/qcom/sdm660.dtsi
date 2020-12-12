@@ -1086,6 +1086,14 @@
 		qcom,count-unit = <0x10000>;
 	};
 
+	cpu_cpu_ddr_min_bw: qcom,cpu-cpu-ddr-min-bw {
+		compatible = "qcom,devbw";
+		governor = "powersave";
+		qcom,src-dst-ports = <1 512>;
+		qcom,active-only;
+		operating-points-v2 = <&cpu_bw_tbl>;
+	};
+
 	cpu0_cpu_ddr_latfloor: qcom,cpu0-cpu-ddr-latfloor {
 		compatible = "qcom,devbw";
 		governor = "powersave";
