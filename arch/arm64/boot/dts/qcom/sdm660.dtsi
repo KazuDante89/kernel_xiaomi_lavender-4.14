@@ -1052,8 +1052,7 @@
 	cpu_cpu_ddr_bw: qcom,cpu-cpu-ddr-bw {
 		compatible = "qcom,devbw";
 		governor = "bw_hwmon";
-		qcom,src-dst-ports =
-			<MSM_BUS_MASTER_AMPSS_M0 MSM_BUS_SLAVE_EBI_CH0>;
+		qcom,src-dst-ports = <1 512>;
 		qcom,active-only;
 		operating-points-v2 = <&generic_bw_opp_table>;
 	};
