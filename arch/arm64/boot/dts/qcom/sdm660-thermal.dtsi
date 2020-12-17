@@ -578,12 +578,12 @@
 		wake-capable-sensor;
 		trips {
 			gold_trip: gold-trip {
-				temperature = <50000>;
+				temperature = <70000>;
 				hysteresis = <0>;
 				type = "passive";
 			};
 			silver_trip: silver-trip {
-				temperature = <53000>;
+				temperature = <73000>;
 				hysteresis = <0>;
 				type = "passive";
 			};
