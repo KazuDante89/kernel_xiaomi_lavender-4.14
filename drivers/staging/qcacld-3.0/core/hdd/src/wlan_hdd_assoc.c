@@ -5914,7 +5914,7 @@ static void hdd_set_def_rsne_override(
 {
 
 	hdd_debug("Set def values in roam profile");
-	roam_profile->MFPCapable = roam_profile->MFPEnabled;
+	/*roam_profile->MFPCapable = roam_profile->MFPEnabled;*/
 	roam_profile->EncryptionType.numEntries = 2;
 	roam_profile->mcEncryptionType.numEntries = 2;
 	/* Use the cipher type in the RSN IE */
@@ -6023,12 +6023,12 @@ int hdd_set_genie_to_csr(hdd_adapter_t *pAdapter, eCsrAuthType *RSNAuthType)
 		 * Reset MFPEnabled if testmode RSNE passed doesnt have MFPR
 		 * or MFPC bit set
 		 */
-		if (pWextState->roamProfile.MFPEnabled &&
+		/*if (pWextState->roamProfile.MFPEnabled &&
 		    !(pWextState->roamProfile.MFPRequired ||
 		      pWextState->roamProfile.MFPCapable)) {
 			hdd_debug("Reset MFPEnabled");
 			pWextState->roamProfile.MFPEnabled = 0;
-		}
+		}*/
 		/* If parsing failed set the def value for the roam profile */
 		if (status)
 			hdd_set_def_rsne_override(&pWextState->roamProfile,
