@@ -58,7 +58,7 @@ function compile() {
 # Zipping
 function zipping() {
     cd AnyKernel || exit 1
-    zip -r9 [EAS]-Neuron-Kernel_v0.0.2.zip *
+    zip -r9 [EAS]-Neuron-Kernel_v0.0.3.zip *
     cd ..
 }
 sendinfo
