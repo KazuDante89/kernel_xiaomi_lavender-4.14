@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+rm -rf .config
+export ARCH=arm64
+make lavender_defconfig
+cp .config arch/arm64/configs/lavender_defconfig
